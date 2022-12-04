@@ -1,5 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("img/patt.png");
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.row{
+    margin: 0 -15px;
+    display: flex;
+    align-items: center;
+}
+[class*="col"]{
+    padding: 0 15px;
+}
+.col-3{
+    width: 25%;
+}
+.col-6{
+    width: 50%;
+}
+.col-9{
+    width: 75%;
+}
+.col-12{
+    width: 100%;
+}
+/* header start */
+header{
+    background-color: rgb(202, 219, 237);
+    opacity: 75%;
+}
+header nav{
+    padding: 25px 0;
+}
+.logo a{
+    display: flex;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    border-left: 1px solid #2c71b8;
+    width: 25%;
+}
+.menu li:last-child{
+    border-right: 1px solid #2c71b8; 
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: #2c71b8;
+    line-height: 50px;
+    text-align: center;
+    transition: all .5s ease;
+}
+.menu a:hover{
+    color: white;
+    background-color:#2c71b8;
+    transition: all .5s ease;
+}
+.search{
+    height: 40px;
+    border: 1px solid #2c71b8;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    border: none;
+    background-color: rgb(202, 219, 237);
+    color: #2c71b8;
+    font-size: 21px;
+    width: 100%;
+}
+
+::placeholder{
+    color: #2c71b8;
+    font-size: 21px;
+}
+.search button{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    background-color: #2c71b8;
+    border: none;
+    background-image: url("img/search.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.search button:hover{
+    cursor: pointer;
+}
+.cart{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    background-image: url("img/cart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    transition: all .5s ease;
+}
+.cart:hover{
+    background-color: #2c71b8;
+    background-image: url("img/cart-hover.png");
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.cart-count{
+    height: 20px;
+    width: 20px;
+    background-color: #2c71b8;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: -10px;
+}
+/* header end */
