@@ -72,7 +72,7 @@ header{
 .menu li:hover .selected::after{
     content: url("img/arrow_up.png");
     transition: all .3s ease;
-    filter:brightness(100);
+    filter: brightness(100);
 }
 .menu li:hover .selected{
     color: #fff;
@@ -88,10 +88,11 @@ header{
 }
 .menu li:hover .submenu{
     display: block;
+    visibility: visible;
 }
 .submenu{
-    display: none;
-    width: 286px;
+    visibility: hidden;
+    width: 200%;
     position: absolute;
     left: -1px;
 }
@@ -118,14 +119,13 @@ header{
     border: 1px solid #2c71b8;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 ::placeholder{
     color: #2c71b8;
     
 }
 .search input{
-    width: 100%;   /*  Sprosit */
+    width: 100%;
     border: none;
     color: #2c71b8;
     font-size: 21px;
