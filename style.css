@@ -193,12 +193,6 @@ header{
     height: 400px;
     text-align: center;
 }
-/* FILTER */
-.filter{
-    background: rgba(255, 255, 255, 0.25);
-    height: 840px;
-    text-align: center;
-}
 /* PRODUCTS */
 .breadcrumb{
     margin-top: 30px;
@@ -353,4 +347,60 @@ header{
 .btn:hover{
     transition: all .3s ease;
     background-color: rgba(255, 255, 255, 0.25);
+}
+/* FOOTER */
+footer{
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #2c71b8;
+    text-align: center;
+    line-height: 100px;
+}
+/* ASIDE FILTER */
+.filter{
+    background: rgba(255, 255, 255, 0.25);
+    /* height: 840px; */
+    padding: 15px 0;
+}
+.filter-sections{
+    padding: 15px 0 0 30px;
+}
+.filter-section {
+    margin-bottom: 25px 0;
+}
+.filter-section:last-child {
+    margin-top: 0;
+}
+.section-name{
+    text-transform: uppercase;
+}
+.filter-section .section-checkbox{
+    padding: 15px 0;
+    display: flex;
+}
+.filter-section .custom-checkbox{
+    display: none;
+}
+.custom-checkbox+label{
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.custom-checkbox+label::before{
+    content: "";
+    align-self: center;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    border: 1px solid white;
+}
+.custom-checkbox:checked +label::before{
+    background-color: white;
+    transition: all .3s;
+}
+.show{
+    text-align: center;
+    margin: 15px 0 25px 0;
 }
