@@ -192,6 +192,7 @@ header{
 .slider{
     height: 400px;
     text-align: center;
+    border-bottom: 1px solid white;
 }
 /* PRODUCTS */
 .breadcrumb{
@@ -359,23 +360,24 @@ footer{
 /* ASIDE FILTER */
 .filter{
     background: rgba(255, 255, 255, 0.25);
-    /* height: 840px; */
     padding: 15px 0;
+    border-right: 1px solid white;
 }
 .filter-sections{
     padding: 15px 0 0 30px;
 }
 .filter-section {
-    margin-bottom: 25px 0;
+    margin-bottom: 50px;
 }
 .filter-section:last-child {
-    margin-top: 0;
+    margin-bottom: 15px;
 }
 .section-name{
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
-.filter-section .section-checkbox{
-    padding: 15px 0;
+.section-checkbox{
+    padding: 10px 0;
     display: flex;
 }
 .filter-section .custom-checkbox{
@@ -402,5 +404,5 @@ footer{
 }
 .show{
     text-align: center;
-    margin: 15px 0 25px 0;
+    margin-bottom: 30px;
 }
